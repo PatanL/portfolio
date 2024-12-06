@@ -2,7 +2,7 @@
   "name": "folio-2022",
   "private": true,
   "version": "1.0.13",
-  "repository": "git@github.com:Giulico/folio-2022.git",
+  "repository": "git@github.com:Patanl/portfolio.git",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "tsc && vite build",
