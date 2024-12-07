@@ -50,14 +50,14 @@ function Logo() {
     <div className={classes}>
       <span className={style.light}>
         <span className={style.inner} onAnimationEnd={endAnimationHandler}>
-          They
+          NeuroWaves
         </span>
       </span>
       <span className={style.light}>
-        <span className={style.inner}>call me</span>
+        <span className={style.inner}>The Future</span>
       </span>
       <span className={style.bold}>
-        <span className={style.inner}>Giulio</span>
+        <span className={style.inner}>of Music</span>
       </span>
     </div>
   )
