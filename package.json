@@ -2,7 +2,7 @@
   "name": "folio-2022",
   "private": true,
   "version": "1.0.13",
-  "repository": "git@github.com:Patanl/portfolio.git",
+  "repository": "https://github.com/Patanl/portfolio.git",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "tsc && vite build",
@@ -102,6 +102,9 @@
           "message": "release: ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
       ]
-    ]
+    ],
+    "env": {
+      "GITHUB_TOKEN": "${GH_TOKEN}"
+    }
   }
 }
