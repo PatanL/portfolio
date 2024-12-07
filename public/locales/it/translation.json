@@ -1,71 +1,71 @@
 {
-  "loading": "Caricamento",
-  "enter": "Entra",
-  "role": "Ruolo",
-  "agency": "Agenzia",
-  "completed": "Completato",
-  "riconoscimenti": "Riconoscimenti",
-  "close": "Chiudi",
-  "close project": "Chiudi il progetto",
-  "go to project": "Visita il case",
+  "loading": "Loading",
+  "enter": "Enter",
+  "role": "Role",
+  "agency": "Agency",
+  "completed": "Completed",
+  "riconoscimenti": "Awards",
+  "close": "Close",
+  "close project": "Close this project",
+  "go to project": "Go to",
   "intro": {
     "p1": {
-      "l1": "Si tratta di tecnologia",
-      "l2": "e di metodo di design"
+      "l1": "Merging AI",
+      "l2": "with music"
     },
     "p2": {
-      "l1": "La ricerca e l'innovazione",
-      "l2": "sono il driver per esperienze memorabili"
+      "l1": "Innovation and AI-driven creativity",
+      "l2": "are redefining musical experiences"
     },
     "p3": {
-      "l1": "Sono un Creative Technologist"
+      "l1": "Welcome to NeuroWave"
     },
     "p4": {
-      "l1": "They Call Me Giulio."
+      "l1": "NeuroWave: The Future of Music"
     },
     "scroll_cta": {
-      "line1": "Scrolla per",
-      "line2": "vedere i progetti"
+      "line1": "Scroll down",
+      "line2": "to discover more"
     }
   },
   "portfolio": {
     "intro": [
-      "Creo",
-      "esperienze digitali<br />interattive.",
-      "Dall'architettura delle informazioni, alla ricerca degli elementi di UI, fino alla cura maniacale delle interazioni.",
-      "E poi, il mio primo amore, l'ottimizzazione del codice."
+      "Showcasing",
+      "Cipher<br />our AI Rapper.",
+      "Experience the fusion of technology and rhythm.",
+      "Powered by advanced AI algorithms."
     ],
     "portfolio": [
-      "Progetti",
-      "Ho collaborato con aziende come: <strong>Nexi</strong>, <strong>Sky</strong>, <strong>Fastweb</strong>, <strong>IBL</strong>, <strong>Generali</strong>, <strong>Corner</strong>, <strong>AMDL Circle</strong>.<br /><br />",
-      "Ecco alcuni dei miei progetti più rilevanti."
+      "Projects/Music", 
+      "NeuroWave collaborates with cutting-edge technology such as: <strong>Nexi</strong>, <strong>Sky</strong>, <strong>Fastweb</strong>, <strong>IBL</strong>, <strong>Generali</strong>, <strong>Corner</strong>, <strong>AMDL Circle</strong>.<br /><br />",
+      "Explore some of Cipher's music."
     ]
   },
   "about": {
     "intro": [
-      "Sono nato a <ImageVenice>Venezia</ImageVenice> nel settembre dell'86, oggi vivo a Como e lavoro per <ImageSketchin>Sketchin</ImageSketchin>, uno studio di advanced-design, come Creative Technologist.",
-      "<pre>Venti</pre> anni fa la prima<br />versione di<br /> TheyCallMeGiulio",
-      "La terza versione, nel 2004 fu la prima ad avere il dominio di primo livello <ImageTCMGTK>theycallmegiulio.tk</ImageTCMGTK>",
-      "Da allora progetto e realizzo esperienze virtuali. Ho studiato diversi linguaggi di programmazione e database per coprire l'intero stack.",
-      "Oggi penso in Javsacript."
+      "NeuroWave was <ImageVenice>founded</ImageVenice> in 2024, to revolutionize the music industry through <ImageSketchin>AI</ImageSketchin>.",
+      "<pre>Our</pre>mission is to<br />create groundbreaking<br /> musical experiences.",
+      "<ImageTCMGTK>Cipher</ImageTCMGTK>, our AI rapper, embodies the future of music creation",
+      "Leveraging state-of-the-art AI technologies, we craft unique sounds and performances.",
+      "Join us as we shape the next era of music."
     ],
-    "clan_title": ["Numbers", "One"],
+    "clan_title": ["Battle", "Born"],
     "clan": [
-      "È il nome di un clan di players di cui fui cofondatore. Una community il cui interesse principale era la passione per <ImageBW>Starcraft Brood War</ImageBW>.",
-      "In quel periodo (erano i primi anni 2000) iniziai a coniugare il divertimento per questo gioco e la passione per il mio lavoro, esercitandomi nel costruire il primo <ImageNO2>n1clan.net</ImageNO2>.",
-      "Un anno dopo realizzai un <ImageNO3>portale Web 2.0</ImageNO3> con logiche di login, news, interviste, upload e sharing dei replay di gioco. Visual con Photoshop, frontend con HTML, CSS e Javascript. Backend custom con PHO Codeigniter e MySql. Sembra ancora uno stack moderno.",
-      "Oggi, come allora, arricchisco il mio lavoro con costante formazione, aggiornamento, condivisione e curiosità."
+      "A fierce display of lyrical prowess and razor-sharp punchlines. <ImageBW>Battle Born</ImageBW>.",
+      "At that time (it was the early 2000s) I began to combine fun for this game and passion for my work, practicing building the first <ImageNO2>Numbers One</ImageNO2> website.",
+      "A year later I built a <ImageNO3>web 2.0 portal</ImageNO3> with features such as logins, news, interviews, uploads and sharing of game replays. Visual design with Photoshop, frontend with HTML, CSS and Javascript. Custom backend with PHP Codeigniter and MySql. It still looks like a modern stack.",
+      "Today, as then, I enrich my work with constant training, updating, sharing and curiosity."
     ],
-    "method_title": "Metodo<br /><pre>e</pre>riconoscimenti",
+    "method_title": "Method<br /><pre>&</pre>Acknowledgements",
     "method": [
-      "Creare un prodotto di successo non vuol dire solo avere una bella estetica e animazioni d’effetto.<br />L'efficacia e l'usabilità di un progetto dipendono dalle sinergie che si formano tra designer e developer.",
-      "Prediligo metodologie Lean<br />e Agile.",
-      "Promuovo per me e per gli altri<br />il miglioramento continuo,<br />attitudinale e di metodo.",
-      "Se oltre a questo arrivano dei riconoscimenti internazionali è una soddisfazione maggiore."
+      "Creating a successful AI-driven music label involves more than just innovative technology.<br />The synergy between AI developers and creative artists is key.",
+      "We emphasize AI<br />and Innovation",
+      "Our approach ensures that<br />NeuroWave remains at the<br />forefront of AI in music.",
+      "If international recognition comes on top of that, it is a greater satisfaction."
     ]
   },
   "contact": {
-    "intro": "È possibile entrare in contatto con me scrivendo a",
-    "social_intro": "Mi trovate un po’ meno sui social, ma se volete potete contattarmi anche su"
+    "intro": "Connect with NeuroWave by writing to",
+    "social_intro": "Find us on social platforms or reach out directly:"
   }
 }
