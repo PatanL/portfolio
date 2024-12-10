@@ -43,7 +43,8 @@ export default class Smoke {
     this.debugObject = {
       positionZ: -1,
       positionY: 0,
-      color: new THREE.Color(0x0000ff)
+      // color: new THREE.Color(0x0000ff)
+      color: new THREE.Color(0xFFD700) // Gold color
     }
 
     this.createGeometry()
@@ -58,8 +59,9 @@ export default class Smoke {
     this.material = new THREE.MeshLambertMaterial({
       color: this.debugObject.color,
       map: this.resource as THREE.Texture,
-      emissive: 0x222222,
-      opacity: 0.15,
+      // emissive: 0x222222,
+      emissive: 0xFFD700, // Gold emissive
+      opacity: 0.15, // Modify opacity or add textures that complement the gold theme.
       transparent: true
     })
 

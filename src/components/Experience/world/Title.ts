@@ -63,7 +63,8 @@ export default class Title {
 
   constructor(options: Settings) {
     this.settings = options
-
+    // console.log(this.settings.text)
+    // this.settings.text = 'Test'
     this.experience = new Experience()
     this.scene = this.experience.scene
     this.sizes = this.experience.sizes

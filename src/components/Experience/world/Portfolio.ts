@@ -151,8 +151,10 @@ export default class Portfolio {
       offsetX: 1.9,
       offsetY: -0.039,
       offsetZ: -1,
-      iColorOuter: new THREE.Color(0x426ff5),
-      iColorInner: new THREE.Color(0xc9ddf2)
+      // iColorOuter: new THREE.Color(0x426ff5),
+      // iColorInner: new THREE.Color(0xc9ddf2)
+      iColorOuter: new THREE.Color(0xFFD700), // Updated to Gold
+      iColorInner: new THREE.Color(0xB8860B)  // Updated to Deep Gold
     }
 
     this.setItems()

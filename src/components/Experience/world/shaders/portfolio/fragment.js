@@ -22,6 +22,10 @@ const fragment = /* glsl */ `
     float height = texture(iChannel1, vUv).r;
 
     pixel = rgbShift(iChannel0, vUv, vOffset).rgb;
+
+    // Define gold colors
+    vec3 goldOuter = iColorOuter; // e.g., vec3(1.0, 0.843, 0.0)
+    vec3 goldInner = iColorInner; // e.g., vec3(0.8, 0.686, 0.0)
       
     float condition_if_1 = step(height, sin(iFactor - 0.04));
     float condition_if_2 = step(height, sin(iFactor - 0.02));

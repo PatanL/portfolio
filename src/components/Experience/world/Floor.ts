@@ -150,7 +150,8 @@ export default class Floor {
   }
 
   createMaterial() {
-    this.grid = new THREE.GridHelper(100, 100, new THREE.Color(0x0000ff), new THREE.Color(0x0000ff))
+    // this.grid = new THREE.GridHelper(100, 100, new THREE.Color(0x0000ff), new THREE.Color(0x0000ff))
+    this.grid = new THREE.GridHelper(100, 100, new THREE.Color(0xFFD700), new THREE.Color(0xFFD700))
     this.scene.add(this.grid)
   }
 

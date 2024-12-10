@@ -17,11 +17,11 @@ function MagicalMarbleMaterial(): MeshStandardMaterial[] {
     roughness: 0.5,
     multipliers: {
       A: 0.03,
-      B: 0.38
+      B: 0.5 // potentially adjust
     },
     colors: {
-      A: 0xffffff,
-      B: 0x003994
+      A: 0xffffff, 
+      B: 0xFFD700 // change to more gold
     }
   }
 

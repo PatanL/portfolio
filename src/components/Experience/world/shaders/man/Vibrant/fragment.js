@@ -110,7 +110,9 @@ const fragment = /* glsl */ `
     // gl_FragColor = vec4(vNormal, 1.0);
     // gl_FragColor = vec4(fresnel);
     // gl_FragColor = txt;
-    gl_FragColor = vec4(mix(vec3(0.,0.,0.4), txt.rgb, fresnel), 1.0);
+     // Define gold color
+    vec3 goldColor = vec3(1.0, 0.843, 0.0); // RGB for gold
+    gl_FragColor = vec4(mix(goldColor, txt.rgb, fresnel), 1.0);
   }
 `
 

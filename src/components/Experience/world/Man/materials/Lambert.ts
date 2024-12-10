@@ -6,9 +6,12 @@ function LambertMaterial(): THREE.MeshLambertMaterial[] {
   const debug = experience.debug
 
   const debugObject = {
-    color: new THREE.Color(0x06080e),
-    emissiveIntensity: 0.05,
-    emissive: new THREE.Color(0x070637)
+    // color: new THREE.Color(0x06080e), 
+    color: new THREE.Color(0xFFD700), // Gold color
+    emissiveIntensity: 0.05, // Increased for a more pronounced glow
+    // emissive: new THREE.Color(0x070637) // 
+    emissive: new THREE.Color(0xFFAA00), // A warmer gold-emissive color
+
   }
 
   let debugFolder
