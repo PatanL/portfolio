@@ -23,20 +23,38 @@ type Props = {
   technologies?: string[]
 }
 
-const techs: { [keys: string]: string } = {
-  flow: '/images/flow.jpg',
-  glsl: '/images/glsl.jpg',
-  lambda: '/images/lambda.jpg',
-  next: '/images/next.jpg',
-  pixi: '/images/pixi.jpg',
-  postcss: '/images/postcss.jpg',
-  sass: '/images/sass.jpg',
-  react: '/images/react.jpg',
-  redux: '/images/redux.jpg',
-  rx: '/images/rx.jpg',
-  three: '/images/three.jpg',
-  vite: '/images/vite.jpg',
-  webpack: '/images/webpack.jpg'
+const techDisplayNames: { [key: string]: string } = {
+  '100aisong': '100% AI Song',
+  'debuted': 'Debuted EP',
+  'thousand': '1000+ Streams',
+  'postcst': 'PostCSS',
+  'lambda': 'Lambda',
+  'flow': 'Flow',
+  'glsl': 'GLSL',
+  'pixi': 'Pixi',
+  'sass': 'Sass',
+  'react': 'React',
+  'rx': 'RX',
+  'three': 'Three.js',
+  'vite': 'Vite',
+  'webpack': 'Webpack'
+}
+
+const techs: { [key: string]: string } = {
+  'flow': '/images/flow.jpg',
+  'glsl': '/images/glsl.jpg',
+  'lambda': '/images/lambda.jpg',
+  'thousand': '/images/Icon_1000_Streams.png',
+  'pixi': '/images/pixi.jpg',
+  'postcst': '/images/postcss.jpg',
+  'sass': '/images/sass.jpg',
+  'react': '/images/react.jpg',
+  'debuted': '/images/Icon_Debuted_Ep.png',
+  'rx': '/images/rx.jpg',
+  'three': '/images/three.jpg',
+  'vite': '/images/vite.jpg',
+  'webpack': '/images/webpack.jpg',
+  '100aisong': '/images/Icon_100_ai_Song.png'
 }
 
 const TextTwoColumns = ({ title, text, numbers, technologies }: Props) => {
@@ -76,20 +94,23 @@ const TextTwoColumns = ({ title, text, numbers, technologies }: Props) => {
             )}
             {technologies && (
               <div className={style.techContainer}>
-                {technologies.map((technology, index) => (
-                  <div key={index} className={style.tech}>
-                    <figure className={style.figure}>
-                      <img
-                        src={techs[technology.toLowerCase()]}
-                        alt={technology}
-                        title={technology}
-                      />
-                      <figcaption>
-                        <p className={style.label}>{technology}</p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                ))}
+                {technologies.map((technology, index) => {
+                  const techKey = technology.toLowerCase().replace(/\s+/g, '')
+                  return (
+                    <div key={index} className={style.tech}>
+                      <figure className={style.figure}>
+                        <img
+                          src={techs[techKey]}
+                          alt={techDisplayNames[techKey]}
+                          title={techDisplayNames[techKey]}
+                        />
+                        <figcaption>
+                          <p className={style.label}>{techDisplayNames[techKey]}</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  )
+                })}
               </div>
             )}
           </>

@@ -60,20 +60,34 @@ const fragment = /* glsl */ `
     // Outputs
     #include <three_msdf_strokes_output>
 
-    vec3 pink = vec3(0.834, 0.066, 0.780);
-    vec3 blue = vec3(0.282,0.616,0.933);
-    vec3 darkBlue = vec3(0.,0.039,0.827);
-    vec3 darkGray = vec3(0.118,0.118,0.118);
-    vec3 white = vec3(1.0, 1.0, 1.0);
+    // vec3 pink = vec3(0.834, 0.066, 0.780);
+    // vec3 blue = vec3(0.282,0.616,0.933);
+    // vec3 darkBlue = vec3(0.,0.039,0.827);
+    // vec3 darkGray = vec3(0.118,0.118,0.118);
+    // vec3 white = vec3(1.0, 1.0, 1.0);
+
+    // Gold-like colors
+    vec3 brightGold = vec3(1.0, 0.85, 0.3); // Brighter gold shade
+    vec3 softGold = vec3(0.9, 0.7, 0.2);   // Softer gold tone
+    vec3 darkGold = vec3(0.7, 0.5, 0.1);   // Darker gold shade
+    vec3 black = vec3(1.0, 1.0, 1.0);      // For shadow effects
+
 
     // Effects
-    vec4 l1 = vec4(white, border * uOpacity);
-    vec4 l2 = vec4(white, outset * uOpacity);
-    vec4 l3 = vec4(darkBlue, outset * uOpacity);
-    vec4 l4 = vec4(white, border * 0.6 * uOpacity);
-    vec4 l5 = vec4(darkBlue, border * uOpacity);
-    vec4 l6 = vec4(darkBlue, outset * uOpacity);
-    vec4 l7 = vec4(white, outset * uOpacity);
+    // vec4 l1 = vec4(white, border * uOpacity);
+    // vec4 l2 = vec4(white, outset * uOpacity);
+    // vec4 l3 = vec4(darkBlue, outset * uOpacity);
+    // vec4 l4 = vec4(white, border * 0.6 * uOpacity);
+    // vec4 l5 = vec4(darkBlue, border * uOpacity);
+    // vec4 l6 = vec4(darkBlue, outset * uOpacity);
+    // vec4 l7 = vec4(white, outset * uOpacity);
+    vec4 l1 = vec4(brightGold, border * uOpacity);
+    vec4 l2 = vec4(softGold, outset * uOpacity);
+    vec4 l3 = vec4(darkGold, outset * uOpacity);
+    vec4 l4 = vec4(softGold, border * 0.6 * uOpacity);
+    vec4 l5 = vec4(brightGold, border * uOpacity);
+    vec4 l6 = vec4(darkGold, outset * uOpacity);
+    vec4 l7 = vec4(black, outset * uOpacity);
 
     // Noise pattern
     float x = floor(vLayoutUv.x * 10. * 1.8);

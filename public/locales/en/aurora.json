@@ -1,0 +1,104 @@
+{
+  "title": "Aurora",
+  "image": "/projects/aq/Aurora_Sub_Page_Image_2.png",
+  "live": "https://www.youtube.com/watch?v=qsTeZlvO77A",
+  "genre": "Indie Pop · Dreamy Psychedelicr",
+  "defining anthem": "Aurora",
+  "active since": "08.2024",
+  "awards": [],
+  "modules": [
+    {
+      "component": "TextIntro",
+      "text": "Aurora is an indie-pop artist blending soulful, dreamy, and psychedelic sounds with heartfelt storytelling and radio-ready hits. Known for her ethereal voice and introspective lyrics, Aurora’s music captures fleeting moments and emotional depth while delivering the catchiness and energy of a mainstream sensation. Her unique sound bridges the gap between indie artistry and pop appeal, making her a standout in today’s music scene."
+    },
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/aq/reel-aq.mp4",
+          "alt": "AQuest reel"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Achievements",
+      "text": "Aurora has quickly achieved milestones that highlight her rise in the industry:",
+      "technologies": ["100aisong", "debuted", "thousand"]
+    },
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/aq/aquest-site.jpeg",
+          "alt": "AQuest site"
+        }
+      ]
+    },
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/aq/v1.mp4",
+          "alt": "AQuest v1"
+        },
+        {
+          "src": "/projects/aq/v2.mp4",
+          "alt": "AQuest v2"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Looking Ahead",
+      "text": "Aurora’s future shines bright, with ambitious goals and growing momentum:<br /><br />With very positive reception from fans and investors, Aurora is gaining recognition as a rising star in music. We are proud to share that even some artists you may know have expressed their admiration for Aurora’s talent, hinting at exciting possibilities.<br /><br />Continued training and refinement will ensure each track surpasses the last, with a goal of achieving 1,000,000 streams across platforms. A collaboration with a notable artist in the indie or pop scene is firmly on the horizon, promising to take her artistry to new heights. Aurora’s journey is a testament to the power of innovation and connection, with each release bringing her closer to becoming an indie-pop icon."
+    },
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/aq/ropes.mp4",
+          "alt": "AQuest v1"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Aurora’s Connection",
+      "text": "Aurora’s presence is as unique as her music. Beyond her captivating sound, she thrives in connecting with fans through meaningful, creative interactions. Whether it’s through intimate posts, behind-the-scenes content, or engaging directly on X (formerly Twitter), Aurora’s interactions feel genuine, reflecting her personality and artistry.<br /><br /> While Aurora autonomously handles her social presence, her fans and NeuroWaves' dev team amplify her message, creating a synergy that has made her an artist who truly resonates with her audience. With a growing community behind her, Aurora is set to expand her influence and solidify her connection with listeners around the world."
+    },
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/aq/pong404.mp4",
+          "alt": "AQuest v2"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Building Aurora",
+      "text": "Aurora was built to embody the soulful, emotional spirit of indie-pop while delivering music at a level that rivals the best in the industry.",
+      "numbers": [
+        {
+          "value": "1,500+ ",
+          "label": "Training Hours"
+        },
+        {
+          "value": "100%",
+          "label": "Autonomous"
+        },
+        {
+          "value": "8+",
+          "label": "Integrated Technologies"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "",
+      "text": "Aurora is more than an artist—she’s a fully autonomous creative force, redefining what AI can achieve in music."
+    }
+  ]
+}

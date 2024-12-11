@@ -55,16 +55,16 @@ const ProjectHero = () => {
           <div className={style.detailContainer}>
             <div className={style.details}>
               <div className={style.detailBlock}>
-                <h3>{t('role')}</h3>
-                <p>{pt('role')}</p>
+                <h3>{t('genre')}</h3>
+                <p>{pt('genre')}</p>
               </div>
               <div className={style.detailBlock}>
-                <h3>{t('agency')}</h3>
-                <p>{pt('agency')}</p>
+                <h3>{t('defining anthem')}</h3>
+                <p>{pt('defining anthem')}</p>
               </div>
               <div className={style.detailBlock}>
-                <h3>{t('completed')}</h3>
-                <p>{pt('completed')}</p>
+                <h3>{t('active since')}</h3>
+                <p>{pt('active since')}</p>
               </div>
               <div className={style.detailBlock}>
                 {awards.length > 0 && (
@@ -86,7 +86,7 @@ const ProjectHero = () => {
                   onMouseLeave={outHandler}
                 >
                   {/* Visit live <img src="/icons/arrow-right.svg" /> */}
-                  Visit live{' '}
+                  Listen Now{' '}
                   <span className={style.externalArrow}>
                     <ExternalArrow />
                   </span>

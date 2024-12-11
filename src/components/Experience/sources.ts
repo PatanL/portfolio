@@ -90,7 +90,7 @@ const sources: Sources = [
     path: '/images/venice.jpeg'
   },
   {
-    name: 'sketchin',
+    name: 'cipher',
     type: 'texture',
     path: '/images/sketchin.jpg'
   },

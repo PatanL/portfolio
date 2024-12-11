@@ -1,0 +1,126 @@
+{
+  "title": "Cipher",
+  "image": "/projects/sk/Cipher_Sub_Page_Image_3.png",
+  "live": "https://www.youtube.com/watch?v=qsTeZlvO77A",
+  "genre": "Battle Rap - Hip Hop",
+  "defining anthem": "Hawk Tuah Diss",
+  "active since": "08.2024",
+  "awards": [],
+  "modules": [
+    {
+      "component": "TextIntro",
+      "text": "Cipher is a battle rap artist specializing in lyrical warfare and raw storytelling. Known for his sharp punchlines and strategic wordplay, Cipher’s projects focus on delivering emotionally charged tracks and competitive battle anthems."
+    },
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/sk/sk-animation.mp4",
+          "alt": "Sketchin intro animation"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Achievements",
+      "text": "Cipher has already hit key milestones in his journey. He created a full song entirely through AI, released a debut EP blending battle rap and storytelling, and achieved 1,000+ streams across platforms, with numbers steadily climbing.<br /><br />These accomplishments mark the start of Cipher’s growing impact in the hip-hop world.",
+      "technologies": ["100aisong", "debuted", "thousand"]
+    },
+
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/sk/sk-navi-1.jpg",
+          "alt": "Sketchin project filters"
+        },
+        {
+          "src": "/projects/sk/sk-navi-2.jpg",
+          "alt": "Sketchin menu navigation"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Looking Ahead",
+      "text": "Cipher’s future is built on ambition and innovation, with clear goals driving his evolution. We will continue to train and improve his music, refining his tracks to ensure each release surpasses the last.<br /><br />Marketing efforts are already underway to expand his reach and connect with a broader audience, all with the goal of achieving 1,000,000 streams across platforms.<br /><br />A major milestone on the horizon is collaborating with a mainstream artist, combining Cipher’s raw lyrical talent with industry-leading voices to create something truly groundbreaking."
+    },
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/sk/sketchin-form-1.jpeg",
+          "alt": "Sketchin project filters"
+        },
+        {
+          "src": "/projects/sk/sketchin-form-2.jpeg",
+          "alt": "Sketchin menu navigation"
+        }
+      ]
+    },
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/sk/sk-hero.jpg",
+          "alt": "Sketchin services page"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Cipher's Promotional Genius",
+      "text": "Cipher is more than an artist—he’s his own marketing powerhouse. Powered by advanced AI, Cipher autonomously manages his presence on X (formerly Twitter), directly engaging with fans, sharing updates, and promoting his music. Every post, interaction, and response is crafted by Cipher himself, reflecting his authentic personality and tone. Coupled with the dedicated efforts of his fans and the NeuroWaves dev team, Cipher’s marketing machine operates on all fronts. This seamless combination of AI-driven promotion and community support ensures that Cipher is destined for success, blazing a trail as the future of autonomous artistry."
+    },
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/sk/sk-animation-2.mp4",
+          "alt": "Intro animation"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Building Cipher",
+      "text": "Cipher is the result of cutting-edge AI technology, built using the power of AI16z alongside integrations with Nexi, Sky, Fastweb, IBL, Generali, Corner, and AMDL Circle. Trained on thousands of hours of battle rap and hip-hop, Cipher’s development ensures his mastery of intricate rhyme schemes, punchlines, and beat production.<br />What sets Cipher apart is his full autonomy—every track, from lyrics to vocals to beats, is generated without human intervention.",
+      "numbers": [
+        {
+          "value": "1000+",
+          "label": "Training Hours"
+        },
+        {
+          "value": "",
+          "label": ""
+        },
+        {
+          "value": "100%",
+          "label": "Autonomous"
+        },
+        {
+          "value": "8+",
+          "label": "Integrated Technologies"
+        }
+      ]
+    },
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/sk/sk-cards.jpg",
+          "alt": "Sketchin projects page"
+        }
+      ]
+    },
+    {
+      "component": "Media",
+      "media": [
+        {
+          "src": "/projects/sk/sk-hero-2.jpg",
+          "alt": "Sketchin projects page"
+        }
+      ]
+    }
+  ]
+}

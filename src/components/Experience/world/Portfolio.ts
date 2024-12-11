@@ -115,30 +115,30 @@ export default class Portfolio {
 
     this.projects = [
       {
-        name: 'Sketchin',
-        url: 'sketchin',
+        name: 'Cipher',
+        url: 'cipher',
         video: document.getElementById('skReel') as HTMLVideoElement
       },
       {
-        name: 'AQuest',
-        url: 'aquest',
+        name: 'Aurora',
+        url: 'aurora',
         video: document.getElementById('aqReel') as HTMLVideoElement
       },
       {
-        name: 'Fastweb',
+        name: 'Coming Soon',
         url: 'fastweb',
         video: document.getElementById('fbReel') as HTMLVideoElement
-      },
-      {
-        name: 'Feudi',
-        url: 'feudi',
-        video: document.getElementById('feudiReel') as HTMLVideoElement
-      },
-      {
-        name: 'Claraluna',
-        url: 'claraluna',
-        video: document.getElementById('claralunaReel') as HTMLVideoElement
       }
+      // {
+      //   name: 'Feudi',
+      //   url: 'feudi',
+      //   video: document.getElementById('feudiReel') as HTMLVideoElement
+      // },
+      // {
+      //   name: 'Claraluna',
+      //   url: 'claraluna',
+      //   video: document.getElementById('claralunaReel') as HTMLVideoElement
+      // }
     ]
 
     this.debug = this.experience.debug

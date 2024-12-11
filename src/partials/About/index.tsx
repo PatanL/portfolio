@@ -31,7 +31,7 @@ function About() {
                   i18nKey={`about.intro.0`}
                   components={{
                     ImageVenice: <ImageTrigger name="venice" />,
-                    ImageSketchin: <ImageTrigger name="sketchin" />,
+                    ImageSketchin: <ImageTrigger name="cipher" />,
                     ImageTCMGTK: <ImageTrigger name="tcmgtk" sizes={[2, 3]} />
                   }}
                 />
@@ -62,7 +62,7 @@ function About() {
                   i18nKey={`about.intro.${i + 2}`}
                   components={{
                     ImageVenice: <ImageTrigger name="venice" />,
-                    ImageSketchin: <ImageTrigger name="sketchin" />,
+                    ImageSketchin: <ImageTrigger name="cipher" />,
                     ImageTCMGTK: <ImageTrigger name="tcmgtk" sizes={[2, 3]} />
                   }}
                 />
