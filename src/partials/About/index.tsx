@@ -160,7 +160,7 @@ function About() {
           </div>
         </Row>
       </Container>
-      <Container grid>
+      {/* <Container grid>
         <Row start={1} end={3}>
           <ContentBlock>
             <List>
@@ -172,7 +172,7 @@ function About() {
             </List>
           </ContentBlock>
         </Row>
-      </Container>
+      </Container> */}
     </Section>
   )
 }

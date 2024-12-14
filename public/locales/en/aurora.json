@@ -16,7 +16,7 @@
       "media": [
         {
           "src": "/projects/aq/reel-aq.mp4",
-          "alt": "AQuest reel"
+          "alt": "AQuest reel, maybe put slide show here"
         }
       ]
     },
@@ -30,21 +30,8 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/aq/aquest-site.jpeg",
-          "alt": "AQuest site"
-        }
-      ]
-    },
-    {
-      "component": "Media",
-      "media": [
-        {
-          "src": "/projects/aq/v1.mp4",
-          "alt": "AQuest v1"
-        },
-        {
-          "src": "/projects/aq/v2.mp4",
-          "alt": "AQuest v2"
+          "src": "/projects/aq/Aurora_Sub_Page_Image_4.png",
+          "alt": "Featuring?"
         }
       ]
     },
@@ -57,8 +44,8 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/aq/ropes.mp4",
-          "alt": "AQuest v1"
+          "src": "/projects/aq/Aurora_Sub_Page_Image_5.png",
+          "alt": "Goal of 1,000,000"
         }
       ]
     },
@@ -71,8 +58,8 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/aq/pong404.mp4",
-          "alt": "AQuest v2"
+          "src": "/projects/aq/Aurora_Sub_Page_Image_3.png",
+          "alt": "Coming Soon"
         }
       ]
     },

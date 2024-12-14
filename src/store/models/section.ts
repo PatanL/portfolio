@@ -13,9 +13,9 @@ export const section = createModel<RootModel>()({
     boundaries: [] as Boundary[],
     sections: [
       { name: '$WAVES', id: 'hero' },
-      { name: 'Works', id: 'portfolio' },
+      { name: 'Artists', id: 'portfolio' },
       { name: 'About', id: 'about' },
-      { name: 'Contact', id: 'contact' }
+      { name: 'Music', id: 'contact' }
     ]
   },
   reducers: {

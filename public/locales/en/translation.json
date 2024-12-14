@@ -10,135 +10,62 @@
   "go to project": "Go to",
   "intro": {
     "p1": {
-      "l1": "It's all about technology",
-      "l2": "and design process"
+      "l1": "Merging AI",
+      "l2": "with music"
     },
     "p2": {
-      "l1": "Research and innovation",
-      "l2": "are the driver of memorable experiences"
+      "l1": "Innovation and AI-driven creativity",
+      "l2": "are redefining musical experiences"
     },
     "p3": {
-      "l1": "I'm a Creative Technologist"
+      "l1": "Welcome to NeuroWave"
     },
     "p4": {
-      "l1": "They Call Me Giulio."
+      "l1": "NeuroWave: The Future of Music"
     },
     "scroll_cta": {
       "line1": "Scroll down",
-      "line2": "to see some work"
+      "line2": "to discover more"
     }
   },
   "portfolio": {
     "intro": [
-      "I craft",
-      "interactive digital<br />experiences.",
-      "From information architecture, to researching UI elements, to maniacally curating interactions.",
-      "Plus, my first love, program optimization."
+      "Showcasing",
+      "Cipher<br />our AI Rapper.",
+      "Experience the fusion of technology and rhythm.",
+      "Powered by advanced AI algorithms."
     ],
     "portfolio": [
-      "Projects",
-      "I have collaborated with companies such as: <strong>Nexi</strong>, <strong>Sky</strong>, <strong>Fastweb</strong>, <strong>IBL</strong>, <strong>Generali</strong>, <strong>Corner</strong>, <strong>AMDL Circle</strong>.<br /><br />",
-      "Here are some of my most relevant projects."
+      "Projects/Music", 
+      "NeuroWave collaborates with cutting-edge technology such as: <strong>Nexi</strong>, <strong>Sky</strong>, <strong>Fastweb</strong>, <strong>IBL</strong>, <strong>Generali</strong>, <strong>Corner</strong>, <strong>AMDL Circle</strong>.<br /><br />",
+      "Explore some of Cipher's music."
     ]
   },
   "about": {
     "intro": [
-      "I was born in <ImageVenice>Venice</ImageVenice> in september '86, today I live in Como and work at <ImageSketchin>Sketchin</ImageSketchin>, an advanced-design studio, as Creative Technologist.",
-      "<pre>Twenty/ys</pre>ago the first<br />version of<br /> TheyCallMeGiulio",
-      "The third version, in 2004, was the first to have the top-level domain <ImageTCMGTK>theycallmegiulio.tk</ImageTCMGTK>",
-      "Since then I have been designing and implementing virtual experiences. I have studied different programming languages and databases to cover the whole stack.",
-      "Today I think in javascript."
+      "NeuroWave was <ImageVenice>founded</ImageVenice> in 2024, to revolutionize the music industry through <ImageSketchin>AI</ImageSketchin>.",
+      "<pre>Our</pre>mission is to<br />create groundbreaking<br /> musical experiences.",
+      "<ImageTCMGTK>Cipher</ImageTCMGTK>, our AI rapper, embodies the future of music creation",
+      "Leveraging state-of-the-art AI technologies, we craft unique sounds and performances.",
+      "Join us as we shape the next era of music."
     ],
-    "clan_title": ["Numbers", "One"],
+    "clan_title": ["Battle", "Born"],
     "clan": [
-      "It is the name of a clan of players of which I was the co-founder. A community whose main interest was a passion for <ImageBW>Starcraft: Brood War</ImageBW>.",
+      "A fierce display of lyrical prowess and razor-sharp punchlines. <ImageBW>Battle Born</ImageBW>.",
       "At that time (it was the early 2000s) I began to combine fun for this game and passion for my work, practicing building the first <ImageNO2>Numbers One</ImageNO2> website.",
       "A year later I built a <ImageNO3>web 2.0 portal</ImageNO3> with features such as logins, news, interviews, uploads and sharing of game replays. Visual design with Photoshop, frontend with HTML, CSS and Javascript. Custom backend with PHP Codeigniter and MySql. It still looks like a modern stack.",
       "Today, as then, I enrich my work with constant training, updating, sharing and curiosity."
     ],
     "method_title": "Method<br /><pre>&</pre>Acknowledgements",
     "method": [
-      "Creating a successful product is not just about having beautiful aesthetics and impressive animations.<br />The effectiveness and usability of a project depends on the synergies formed between designer and developer.",
-      "I emphasize Lean and Agile<br />methodologies",
-      "I promote continuous, attitudinal<br />and methodical improvement<br />for myself and others",
+      "Creating a successful AI-driven music label involves more than just innovative technology.<br />The synergy between AI developers and creative artists is key.",
+      "We emphasize AI<br />and Innovation",
+      "Our approach ensures that<br />NeuroWave remains at the<br />forefront of AI in music.",
       "If international recognition comes on top of that, it is a greater satisfaction."
     ]
   },
   "contact": {
-    "intro": "You can get in touch with me by writing to",
-    "social_intro": "You can find me a little less on social, but if you want you can also contact me on"
+    "intro": "Connect with NeuroWave by tweeting to",
+    "social_intro": "Listen to us on these social platforms:"
   }
 }
-
-
-// {
-//   "loading": "Loading",
-//   "enter": "Enter",
-//   "role": "Role",
-//   "agency": "Agency",
-//   "completed": "Completed",
-//   "riconoscimenti": "Awards", //change it up
-//   "close": "Close",
-//   "close project": "Close this project",
-//   "go to project": "Go to",
-//   "intro": {
-//     "p1": {
-//       "l1": "Merging AI",
-//       "l2": "with music"
-//     },
-//     "p2": {
-//       "l1": "Innovation and AI-driven creativity",
-//       "l2": "are redefining musical experiences"
-//     },
-//     "p3": {
-//       "l1": "Welcome to NeuroWave"
-//     },
-//     "p4": {
-//       "l1": "NeuroWave: The Future of Music"
-//     },
-//     "scroll_cta": {
-//       "line1": "Scroll down",
-//       "line2": "to discover more"
-//     }
-//   },
-//   "portfolio": {
-//     "intro": [
-//       "Showcasing",
-//       "Cipher,l<br />our AI Rapper.",
-//       "Experience the fusion of technology and rhythm.",
-//       "Powered by advanced AI algorithms."
-//     ],
-//     "portfolio": [
-//       "Projects",
-//       "NeuroWave collaborates with cutting-edge technology such as: <strong>Nexi</strong>, <strong>Sky</strong>, <strong>Fastweb</strong>, <strong>IBL</strong>, <strong>Generali</strong>, <strong>Corner</strong>, <strong>AMDL Circle</strong>.<br /><br />",
-//       "Explore some of Cipher's music."
-//     ]
-//   },
-//   "about": {
-//     "intro": [
-//       "NeuroWave was founded in <ImageVenice>2024</ImageVenice> to revolutionize the music industry through <ImageSketchin>AI</ImageSketchin>.",
-//       "<pre>Our/ys</pre>mission is to<br />create groundbreaking<br /> musical experiences.",
-//       "The third version, in 2004, was the first to have the top-level domain <ImageTCMGTK>theycallmegiulio.tk</ImageTCMGTK>",
-//       "Since then I have been designing and implementing virtual experiences. I have studied different programming languages and databases to cover the whole stack.",
-//       "Today I think in javascript."
-//     ],
-//     "clan_title": ["Numbers", "One"],
-//     "clan": [
-//       "It is the name of a clan of players of which I was the co-founder. A community whose main interest was a passion for <ImageBW>Starcraft: Brood War</ImageBW>.",
-//       "At that time (it was the early 2000s) I began to combine fun for this game and passion for my work, practicing building the first <ImageNO2>Numbers One</ImageNO2> website.",
-//       "A year later I built a <ImageNO3>web 2.0 portal</ImageNO3> with features such as logins, news, interviews, uploads and sharing of game replays. Visual design with Photoshop, frontend with HTML, CSS and Javascript. Custom backend with PHP Codeigniter and MySql. It still looks like a modern stack.",
-//       "Today, as then, I enrich my work with constant training, updating, sharing and curiosity."
-//     ],
-//     "method_title": "Method<br /><pre>&</pre>Acknowledgements",
-//     "method": [
-//       "Creating a successful product is not just about having beautiful aesthetics and impressive animations.<br />The effectiveness and usability of a project depends on the synergies formed between designer and developer.",
-//       "I emphasize Lean and Agile<br />methodologies",
-//       "I promote continuous, attitudinal<br />and methodical improvement<br />for myself and others",
-//       "If international recognition comes on top of that, it is a greater satisfaction."
-//     ]
-//   },
-//   "contact": {
-//     "intro": "You can get in touch with me by writing to",
-//     "social_intro": "You can find me a little less on social, but if you want you can also contact me on"
-//   }
-// }

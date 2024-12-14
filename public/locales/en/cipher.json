@@ -15,7 +15,7 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/sk/sk-animation.mp4",
+          "src": "/projects/sk/Cipher_Sub_Page_Image_3.png",
           "alt": "Sketchin intro animation"
         }
       ]
@@ -31,12 +31,8 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/sk/sk-navi-1.jpg",
+          "src": "/projects/sk/Cipher_Sub_Page_Image_4.png",
           "alt": "Sketchin project filters"
-        },
-        {
-          "src": "/projects/sk/sk-navi-2.jpg",
-          "alt": "Sketchin menu navigation"
         }
       ]
     },
@@ -49,21 +45,8 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/sk/sketchin-form-1.jpeg",
-          "alt": "Sketchin project filters"
-        },
-        {
-          "src": "/projects/sk/sketchin-form-2.jpeg",
-          "alt": "Sketchin menu navigation"
-        }
-      ]
-    },
-    {
-      "component": "Media",
-      "media": [
-        {
-          "src": "/projects/sk/sk-hero.jpg",
-          "alt": "Sketchin services page"
+          "src": "/projects/sk/Cipher_Sub_Page_Image_2.png",
+          "alt": "Cipher coming soon"
         }
       ]
     },
@@ -108,17 +91,8 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/sk/sk-cards.jpg",
-          "alt": "Sketchin projects page"
-        }
-      ]
-    },
-    {
-      "component": "Media",
-      "media": [
-        {
-          "src": "/projects/sk/sk-hero-2.jpg",
-          "alt": "Sketchin projects page"
+          "src": "/projects/sk/Cipher_Sub_Page_Image_5.png",
+          "alt": "Ground breaking news on the way"
         }
       ]
     }
