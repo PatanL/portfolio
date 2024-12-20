@@ -37,24 +37,21 @@
     ],
     "portfolio": [
       "Projects/Music", 
-      "NeuroWaves collaborates with cutting-edge technology such as: <strong>Nexi</strong>, <strong>Sky</strong>, <strong>Fastweb</strong>, <strong>IBL</strong>, <strong>Generali</strong>, <strong>Corner</strong>, <strong>AMDL Circle</strong>.<br /><br />",
-      "Explore some of Cipher's music."
+      "NeuroWaves uses cutting-edge technology such as: <strong>Eliza</strong>, <strong>Llama 3.3</strong>, <strong>Suno</strong>, and <strong>DeepMind WaveNet</strong> to revolutionize the music industry.<br /><br />",
+      "Explore our artists' music."
     ]
   },
   "about": {
     "intro": [
-      "NeuroWaves was <ImageVenice>founded</ImageVenice> in 2024, to revolutionize the music industry through <ImageSketchin>AI</ImageSketchin>.",
+      "NeuroWaves was founded in 2024, to revolutionize the music industry through AI.",
       "<pre>Our</pre>mission is to<br />create groundbreaking<br /> musical experiences.",
-      "<ImageTCMGTK>Cipher</ImageTCMGTK>, our AI rapper, embodies the future of music creation",
+      "Cipher, our AI rapper, embodies the future of music creation",
       "Leveraging state-of-the-art AI technologies, we craft unique sounds and performances.",
       "Join us as we shape the next era of music."
     ],
     "clan_title": ["Battle", "Born"],
     "clan": [
-      "A fierce display of lyrical prowess and razor-sharp punchlines. <ImageBW>Battle Born</ImageBW>.",
-      "At that time (it was the early 2000s) I began to combine fun for this game and passion for my work, practicing building the first <ImageNO2>Numbers One</ImageNO2> website.",
-      "A year later I built a <ImageNO3>web 2.0 portal</ImageNO3> with features such as logins, news, interviews, uploads and sharing of game replays. Visual design with Photoshop, frontend with HTML, CSS and Javascript. Custom backend with PHP Codeigniter and MySql. It still looks like a modern stack.",
-      "Today, as then, I enrich my work with constant training, updating, sharing and curiosity."
+      "A fierce display of lyrical prowess and razor-sharp punchlines. Battle Born."
     ],
     "method_title": "Method<br /><pre>&</pre>Acknowledgements",
     "method": [

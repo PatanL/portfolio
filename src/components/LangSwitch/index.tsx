@@ -14,7 +14,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 const links = [
-  { code: '𝕏', label: 'Twitter', link: 'https://x.com/neuro_waves' },
+  { code: '𝕏', label: '𝕏', link: 'https://x.com/neuro_waves' },
   { code: 'CA', label: 'CA', action: 'copy', textToCopy: 'TBD' }
 ]
 
@@ -74,7 +74,6 @@ const LangSwitch = () => {
                 ) : (
                   <>
                     <span>{label}</span> {/* Default label */}
-                    <span className={style.icon}>📋</span> {/* Clipboard icon */}
                   </>
                 )}
               </span>
