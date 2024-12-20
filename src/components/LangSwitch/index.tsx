@@ -61,7 +61,7 @@ const LangSwitch = () => {
             <button
               key={code}
               className={cn(style.button, {
-                [style.active]: code === app.language // Adjust logic as per your state
+                [style.active]: code === ('en') // Ensure language exists or provide a fallback
               })}
               onClick={() => handleCopy(code, textToCopy || '')}
             >
@@ -89,7 +89,7 @@ const LangSwitch = () => {
             target="_blank" // Opens the link in a new tab
             rel="noopener noreferrer" // For security (prevents tab hijacking)
             className={cn(style.button, {
-              [style.active]: code === app.language // Adjust logic as per your state
+              [style.active]: code === ('en') // Ensure language exists or provide a fallback
             })}
           >
             <span className={style.label}>
