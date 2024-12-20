@@ -8,38 +8,24 @@ import style from './index.module.css'
 import cn from 'classnames'
 
 // Hooks
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { useCallback, useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
-const languages = ['it', 'en']
+const links = [
+  { code: '𝕏', label: 'Twitter', link: 'https://x.com/neuro_waves' },
+  { code: 'CA', label: 'CA', action: 'copy', textToCopy: 'TBD' }
+]
 
 const LangSwitch = () => {
-  const dispatch = useDispatch()
   const { app, menu } = useSelector((state: RootState) => ({
     app: state.app,
     menu: state.menu
   }))
   const [isReady, setIsReady] = useState(false)
-  const { i18n } = useTranslation()
+  const [copiedCode, setCopiedCode] = useState<string | null>(null) // Track which button was clicked
   const location = useLocation()
-
-  const changeLanguage = useCallback(
-    (lang: string) => () => {
-      i18n.changeLanguage(lang)
-    },
-    [i18n]
-  )
-
-  const overHandler = useCallback(() => {
-    dispatch.pointer.setType('hover')
-  }, [dispatch.pointer])
-
-  const outHandler = useCallback(() => {
-    dispatch.pointer.setType('default')
-  }, [dispatch.pointer])
 
   useEffect(() => {
     if (app.ready) {
@@ -56,30 +42,66 @@ const LangSwitch = () => {
     [style.dark]: !isHome
   })
 
+  const handleCopy = useCallback((code: string, text: string) => {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        setCopiedCode(code) // Track the copied button
+        setTimeout(() => setCopiedCode(null), 2000) // Reset after 2 seconds
+      })
+      .catch((err) => {
+        console.error('Failed to copy text: ', err)
+      })
+  }, [])
+
   return (
     <div className={classes}>
-      {languages.map((lang) => {
-        const isActive = lang === i18n.resolvedLanguage
-        const classes = cn(style.button, {
-          [style.active]: isActive
-        })
+      {links.map(({ code, label, link, action, textToCopy }) => {
+        if (action === 'copy') {
+          return (
+            <button
+              key={code}
+              className={cn(style.button, {
+                [style.active]: code === app.language // Adjust logic as per your state
+              })}
+              onClick={() => handleCopy(code, textToCopy || '')}
+            >
+              <span className={style.label}>
+                {copiedCode === code ? (
+                  <>
+                    <span>Copied</span> {/* Replace text with "Copied" */}
+                    <span className={style.checkmark}>✔</span> {/* Add a checkmark */}
+                  </>
+                ) : (
+                  <>
+                    <span>{label}</span> {/* Default label */}
+                    <span className={style.icon}>📋</span> {/* Clipboard icon */}
+                  </>
+                )}
+              </span>
+              <span className={style.marker} />
+            </button>
+          )
+        }
 
         return (
-          <button
-            key={lang}
-            className={classes}
-            onClick={changeLanguage(lang)}
-            onMouseEnter={isActive ? undefined : overHandler}
-            onMouseLeave={outHandler}
+          <a
+            key={code}
+            href={link}
+            target="_blank" // Opens the link in a new tab
+            rel="noopener noreferrer" // For security (prevents tab hijacking)
+            className={cn(style.button, {
+              [style.active]: code === app.language // Adjust logic as per your state
+            })}
           >
             <span className={style.label}>
-              <span>{lang}</span>
+              <span>{label}</span>
             </span>
             <span className={style.marker} />
-          </button>
+          </a>
         )
       })}
     </div>
   )
 }
+
 export default LangSwitch
