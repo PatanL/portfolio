@@ -32,22 +32,15 @@ const fragment = /* glsl */ `
     float condition_if_3 = step(height, sin(iFactor));
 
     // Burned layers
-    pixel = pixel * (1. - condition_if_1) + vec3(iColorOuter) * condition_if_1;
-    pixel = pixel * (1. - condition_if_2) + vec3(iColorInner) * condition_if_2;
+    pixel = pixel * (1. - condition_if_1) + goldOuter * condition_if_1;
+    pixel = pixel * (1. - condition_if_2) + goldInner * condition_if_2;
     // Black layer
     pixel = pixel * (1. - condition_if_3);
 
-    vec4 reveal = vec4(0.0);
-
-    // Transparency on black layer
-    if (pixel == vec3(0)) {
-      reveal = vec4(pixel, 0.0);
-    } else {
-      reveal = vec4(pixel, 1.0);
-    }
-
-    gl_FragColor = reveal;
+    // Directly set alpha to 1.0 for all pixels
+    gl_FragColor = vec4(pixel, 1.0);
   }
+
 `
 
 export default fragment

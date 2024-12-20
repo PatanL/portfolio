@@ -126,7 +126,7 @@ export default class Portfolio {
       },
       {
         name: 'Coming Soon',
-        url: 'fastweb',
+        url: 'comingsoon',
         video: document.getElementById('fbReel') as HTMLVideoElement
       }
       // {

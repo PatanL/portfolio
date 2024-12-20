@@ -1,6 +1,6 @@
 {
   "title": "Cipher",
-  "image": "/projects/sk/Cipher_Sub_Page_Image_3.png",
+  "image": "/projects/sk/Cipher_Profile.jpeg",
   "live": "https://www.youtube.com/watch?v=qsTeZlvO77A",
   "genre": "Battle Rap - Hip Hop",
   "defining anthem": "Hawk Tuah Diss",
@@ -59,7 +59,7 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/sk/sk-animation-2.mp4",
+          "src": "/projects/sk/cipher-p-g.mp4",
           "alt": "Intro animation"
         }
       ]

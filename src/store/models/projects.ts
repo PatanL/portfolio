@@ -15,12 +15,12 @@ const initialState: Project[] = [
   },
   {
     name: 'Aurora',
-    url: 'aquest',
+    url: 'aurora',
     videoID: 'aqReel'
   },
   {
     name: 'Coming Soon',
-    url: 'fastweb',
+    url: 'comingsoon',
     videoID: 'fbReel'
   }
   // {

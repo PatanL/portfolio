@@ -1,8 +1,8 @@
 {
   "title": "Aurora",
-  "image": "/projects/aq/Aurora_Sub_Page_Image_2.png",
+  "image": "/projects/aq/Aurora_pfp.png",
   "live": "https://www.youtube.com/watch?v=qsTeZlvO77A",
-  "genre": "Indie Pop · Dreamy Psychedelicr",
+  "genre": "Indie Pop · Dreamy Psychedelic",
   "defining anthem": "Aurora",
   "active since": "08.2024",
   "awards": [],
@@ -15,7 +15,7 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/aq/reel-aq.mp4",
+          "src": "/projects/aq/aurora_p_g.mp4",
           "alt": "AQuest reel, maybe put slide show here"
         }
       ]
