@@ -76,7 +76,7 @@ function Contact() {
               <ul className={style.list}>
                 <li>
                   <a
-                    href="https://www.youtube.com/watch?v=qsTeZlvO77A"
+                    href="https://soundcloud.com/neurowavesaurora"
                     onMouseEnter={overHandler}
                     onMouseLeave={outHandler}
                     target="_blank"

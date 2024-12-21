@@ -1,7 +1,7 @@
 {
   "title": "Cipher",
-  "image": "/projects/sk/Cipher_Profile.jpeg",
-  "live": "https://www.youtube.com/watch?v=qsTeZlvO77A",
+  "image": "/projects/sk/Cipher_Icon.png",
+  "live": "https://www.youtube.com/@NeuroWavesMusic",
   "genre": "Battle Rap - Hip Hop",
   "defining anthem": "Hawk Tuah Diss",
   "active since": "08.2024",
@@ -15,8 +15,8 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/sk/Cipher_Sub_Page_Image_3.png",
-          "alt": "Sketchin intro animation"
+          "src": "/projects/sk/sk-reel.mp4",
+          "alt": "Intro animation"
         }
       ]
     },
@@ -26,13 +26,16 @@
       "text": "Cipher has already hit key milestones in his journey. He created a full song entirely through AI, released a debut EP blending battle rap and storytelling, and achieved 1,000+ streams across platforms, with numbers steadily climbing.<br /><br />These accomplishments mark the start of Cipher’s growing impact in the hip-hop world.",
       "technologies": ["100aisong", "debuted", "thousand"]
     },
-
     {
       "component": "Media",
       "media": [
         {
-          "src": "/projects/sk/Cipher_Sub_Page_Image_4.png",
-          "alt": "Sketchin project filters"
+          "src": "/projects/sk/Cipher_Sub_Page_Image_2.png",
+          "alt": "Cipher coming soon"
+        },
+        {
+          "src": "/projects/sk/Cipher_Sub_Page_Image_3.png",
+          "alt": "Cipher vs. competition"
         }
       ]
     },
@@ -45,8 +48,12 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/sk/Cipher_Sub_Page_Image_2.png",
-          "alt": "Cipher coming soon"
+          "src": "/projects/sk/Cipher_Sub_Page_Image_4.png",
+          "alt": "Trending Artist"
+        },
+        {
+          "src": "/projects/sk/Cipher_Sub_Page_Image_5.png",
+          "alt": "News"
         }
       ]
     },
@@ -84,15 +91,6 @@
         {
           "value": "8+",
           "label": "Integrated Technologies"
-        }
-      ]
-    },
-    {
-      "component": "Media",
-      "media": [
-        {
-          "src": "/projects/sk/Cipher_Sub_Page_Image_5.png",
-          "alt": "Ground breaking news on the way"
         }
       ]
     }

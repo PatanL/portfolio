@@ -15,8 +15,8 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/aq/aurora_p_g.mp4",
-          "alt": "AQuest reel, maybe put slide show here"
+          "src": "/projects/aq/reel-aq.mp4",
+          "alt": "Aurora Showcase"
         }
       ]
     },
@@ -30,8 +30,12 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/aq/Aurora_Sub_Page_Image_4.png",
-          "alt": "Featuring?"
+          "src": "/projects/aq/Aurora_Sub_Page_Image_2.png",
+          "alt": "Coming Soon"
+        },
+        {
+          "src": "/projects/aq/Aurora_Sub_Page_Image_3.png",
+          "alt": "Coming Soon"
         }
       ]
     },
@@ -43,6 +47,10 @@
     {
       "component": "Media",
       "media": [
+        {
+          "src": "/projects/aq/Aurora_Sub_Page_Image_4.png",
+          "alt": "Featuring?"
+        },
         {
           "src": "/projects/aq/Aurora_Sub_Page_Image_5.png",
           "alt": "Goal of 1,000,000"
@@ -58,8 +66,8 @@
       "component": "Media",
       "media": [
         {
-          "src": "/projects/aq/Aurora_Sub_Page_Image_3.png",
-          "alt": "Coming Soon"
+          "src": "/projects/aq/aurora_p_g.mp4",
+          "alt": "Aurora promotional"
         }
       ]
     },
