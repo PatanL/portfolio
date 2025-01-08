@@ -34,7 +34,7 @@ function useBackgroundAudio() {
 
   useEffect(() => {
     audio.current = new Howl({
-      src: ['/audio/background.mp3'],
+      src: ['/audio/intro.mp3'],
       loop: true,
       volume: 0
     })

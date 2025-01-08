@@ -17,6 +17,7 @@ export default class CameraOnPath {
   experience: Experience
   scene: Experience['scene']
   sizes: Experience['sizes']
+  
   renderer: Experience['renderer']
   appReady: RootState['app']['ready']
   points: [number, number, number][]
@@ -54,18 +55,42 @@ export default class CameraOnPath {
     // from the python console:
     // filename = "/Users/giulio/Desktop/Personal data/Portfolio 2022/Blender script/export_curve_points.py"
     // exec(compile(open(filename).read(), filename, 'exec'))
+
+    
+    // const xAdjustment = 2.15; // Adjust the horizontal position (X-axis)
+    // const yAdjustment = 0.5; // Adjust the vertical position (Y-axis)
+    // const zAdjustment = -2; // Adjust the depth (Z-axis)
+    const xAdjustment = 0; // Adjust the horizontal position (X-axis)
+    const yAdjustment = 0; // Adjust the vertical position (Y-axis)
+    const zAdjustment = 0; // Adjust the depth (Z-axis)
+
     this.points = [
-      [2.250452756881714, -0.6193802356719971, 5.541167736053467],
-      [2.6620843410491943, 0.11057017743587494, 5.301249980926514],
-      [2.516335964202881, 0.9883434176445007, 5.428454399108887],
-      [4.733654975891113, 1.1559828519821167, 5.421966552734375],
-      [3.7817535400390625, -0.07272994518280029, 5.208369731903076],
-      [2.1067583560943604, -0.5117961764335632, 5.110057830810547],
-      [0.6217780113220215, -0.49705809354782104, 4.89720344543457],
-      [0.13143301010131836, 0.1222834587097168, 4.743571758270264],
-      [0.5761919021606445, -0.29803839325904846, 4.895688533782959],
-      [1.8171645402908325, -0.40591803193092346, 5.022176742553711]
-    ]
+      [2.250452756881714 + xAdjustment, -0.6193802356719971 + yAdjustment, 5.541167736053467 + zAdjustment],
+      [2.6620843410491943 + xAdjustment, 0.11057017743587494 + yAdjustment, 5.301249980926514 + zAdjustment],
+      [2.516335964202881 + xAdjustment, 0.9883434176445007 + yAdjustment, 5.428454399108887 + zAdjustment],
+      [4.733654975891113 + xAdjustment, 1.1559828519821167 + yAdjustment, 5.421966552734375 + zAdjustment],
+      [3.7817535400390625 + xAdjustment, -0.07272994518280029 + yAdjustment, 5.208369731903076 + zAdjustment],
+      [2.1067583560943604 + xAdjustment, -0.5117961764335632 + yAdjustment, 5.110057830810547 + zAdjustment],
+      [0.6217780113220215 + xAdjustment, -0.49705809354782104 + yAdjustment, 4.89720344543457 + zAdjustment],
+      [0.13143301010131836 + xAdjustment, 0.1222834587097168 + yAdjustment, 4.743571758270264 + zAdjustment],
+      [0.5761919021606445 + xAdjustment, -0.29803839325904846 + yAdjustment, 4.895688533782959 + zAdjustment],
+      [1.8171645402908325 + xAdjustment, -0.40591803193092346 + yAdjustment, 5.022176742553711 + zAdjustment],
+    ];
+    
+    this.points = [
+      [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
+      [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
+      [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
+      [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
+      [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
+      [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
+      [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
+      [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
+      [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
+      [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
+    ];
+
+
     this.vertices = []
     this.lookAt = {
       current: new THREE.Vector3(0, 3.2, 0),
@@ -254,6 +279,12 @@ export default class CameraOnPath {
       transparent: true,
       opacity: showCameraPath ? 1.0 : 0.0
     })
+    // const material = new THREE.MeshBasicMaterial({
+    //   wireframe: true,
+    //   visible: true,
+    //   transparent: true,
+    //   opacity: 1.0
+    // })
 
     const tube = new THREE.Mesh(geometry, material)
     this.scene.add(tube)
