@@ -39,7 +39,7 @@ function Menu() {
   return (
     <div className={classes}>
       <p className={style.desc}>
-        <span className={style.line}>v1.0</span>
+        <span className={style.line}>Multimodal AI</span>
       </p>
       <p className={style.desc}>
         <span className={style.line}>2024</span>
