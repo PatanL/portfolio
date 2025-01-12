@@ -82,6 +82,9 @@ export default function Hero() {
           </div>
         </footer>
       </Section>
+      <footer className={style.footer}>
+        <AudioWave />
+      </footer>
     </>
   )
 }
