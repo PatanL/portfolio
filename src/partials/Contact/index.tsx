@@ -86,7 +86,7 @@ function Contact() {
                 </li>
                 <li>
                   <a
-                    href="https://www.youtube.com/watch?v=qsTeZlvO77A"
+                    href="https://www.youtube.com/@NeuroWavesMusic"
                     onMouseEnter={overHandler}
                     onMouseLeave={outHandler}
                     target="_blank"

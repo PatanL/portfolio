@@ -17,8 +17,8 @@ function AudioWave() {
   const dispatch = useDispatch()
   const { app, audio } = useSelector((state: RootState) => ({ app: state.app, audio: state.audio }))
   const { toggle, isPlaying } = useBackgroundAudio()
-  useIntroAudio()
-  useVangelisAudio()
+  // useIntroAudio()
+  // useVangelisAudio()
 
   const muteHandler = useCallback(() => {
     if (audio.mute) {

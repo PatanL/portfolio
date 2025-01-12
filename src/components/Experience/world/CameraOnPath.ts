@@ -13,6 +13,9 @@ import Experience from '../Experience'
 // Settings
 import { showOrbitControls, showCameraPath } from 'settings'
 
+// Replace "Sections" with your actual type or interface for section IDs.
+type Sections = 'hero' | 'about' | 'portfolio' | 'menu' | string
+
 export default class CameraOnPath {
   experience: Experience
   scene: Experience['scene']
@@ -51,32 +54,12 @@ export default class CameraOnPath {
     }
     this.appReady = false
 
-    // How to retrive the points from Blender
-    // from the python console:
-    // filename = "/Users/giulio/Desktop/Personal data/Portfolio 2022/Blender script/export_curve_points.py"
-    // exec(compile(open(filename).read(), filename, 'exec'))
+    // Adjustments for the camera path (stationary)
+    const xAdjustment = 1 // Adjust the horizontal position (X-axis) left and right
+    const yAdjustment = -0.5 // Adjust the vertical position (Y-axis), how close i am with the model
+    const zAdjustment = 6 // Adjust the depth (Z-axis)
 
-    
-    // const xAdjustment = 2.15; // Adjust the horizontal position (X-axis)
-    // const yAdjustment = 0.5; // Adjust the vertical position (Y-axis)
-    // const zAdjustment = -2; // Adjust the depth (Z-axis)
-    const xAdjustment = 0; // Adjust the horizontal position (X-axis)
-    const yAdjustment = 0; // Adjust the vertical position (Y-axis)
-    const zAdjustment = 0; // Adjust the depth (Z-axis)
-
-    this.points = [
-      [2.250452756881714 + xAdjustment, -0.6193802356719971 + yAdjustment, 5.541167736053467 + zAdjustment],
-      [2.6620843410491943 + xAdjustment, 0.11057017743587494 + yAdjustment, 5.301249980926514 + zAdjustment],
-      [2.516335964202881 + xAdjustment, 0.9883434176445007 + yAdjustment, 5.428454399108887 + zAdjustment],
-      [4.733654975891113 + xAdjustment, 1.1559828519821167 + yAdjustment, 5.421966552734375 + zAdjustment],
-      [3.7817535400390625 + xAdjustment, -0.07272994518280029 + yAdjustment, 5.208369731903076 + zAdjustment],
-      [2.1067583560943604 + xAdjustment, -0.5117961764335632 + yAdjustment, 5.110057830810547 + zAdjustment],
-      [0.6217780113220215 + xAdjustment, -0.49705809354782104 + yAdjustment, 4.89720344543457 + zAdjustment],
-      [0.13143301010131836 + xAdjustment, 0.1222834587097168 + yAdjustment, 4.743571758270264 + zAdjustment],
-      [0.5761919021606445 + xAdjustment, -0.29803839325904846 + yAdjustment, 4.895688533782959 + zAdjustment],
-      [1.8171645402908325 + xAdjustment, -0.40591803193092346 + yAdjustment, 5.022176742553711 + zAdjustment],
-    ];
-    
+    // Define the points so that every point is the same
     this.points = [
       [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
       [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
@@ -89,15 +72,16 @@ export default class CameraOnPath {
       [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
       [0 + xAdjustment, 0 + yAdjustment, 0 + zAdjustment],
     ];
-
 
     this.vertices = []
+    // Set the lookAt targets.
+    // We want the camera to always look at (0,0,0), so we set current to (0,0,0)
     this.lookAt = {
-      current: new THREE.Vector3(0, 3.2, 0),
-      body: new THREE.Vector3(0, 3, 0),
-      portfolio: new THREE.Vector3(0, 2.7, 0),
-      about: new THREE.Vector3(0, 3, 0.5),
-      menu: new THREE.Vector3(2, 2, -1)
+      current: new THREE.Vector3(0, 0, 0),
+      body: new THREE.Vector3(0, 0, 0),
+      portfolio: new THREE.Vector3(0, 10, -2),
+      about: new THREE.Vector3(0, 10, -2),
+      menu: new THREE.Vector3(0, 0, 0)
     }
     this.percentage = 0
 
@@ -123,13 +107,15 @@ export default class CameraOnPath {
       })
 
       gsap.to(this.lookAt.current, {
-        y: this.lookAt.body.y,
+        x: 0,
+        y: 0,
+        z: 0,
         duration: 3.5,
         ease: 'power3.inOut'
       })
     }
 
-    // Scroll / bodyHeight
+    // Scroll / bodyHeight update (we still update bodyHeight for potential future use)
     if (state.scroll !== prevState.scroll) {
       this.bodyHeight = window.document.body.clientHeight - this.sizes.height
     }
@@ -163,8 +149,6 @@ export default class CameraOnPath {
         })
       } else {
         // Menu is closing
-        // Use snapshot if the section is the same
-        // if user navigate through a new section move to that section point
         let position: THREE.Vector3
         let lookAt: THREE.Vector3
 
@@ -208,37 +192,19 @@ export default class CameraOnPath {
       }
     }
 
-    // Section
+    // Section changes
     if (state.section.current !== prevState.section.current) {
-      gsap.killTweensOf(this.lookAt.current, 'y,z')
+      gsap.killTweensOf(this.lookAt.current, 'x,y,z')
       const duration = 1
       const ease = 'power2.inOut'
-
-      switch (state.section.current) {
-        case 'about':
-          gsap.to(this.lookAt.current, {
-            y: this.lookAt.about.y,
-            z: this.lookAt.about.z,
-            duration,
-            ease
-          })
-          break
-        case 'portfolio':
-          gsap.to(this.lookAt.current, {
-            y: this.lookAt.portfolio.y,
-            duration,
-            ease
-          })
-          break
-        default:
-          gsap.to(this.lookAt.current, {
-            y: this.lookAt.body.y,
-            z: this.lookAt.body.z,
-            duration,
-            ease
-          })
-          break
-      }
+      // For section changes, force lookAt.current to be (0,0,0)
+      gsap.to(this.lookAt.current, {
+        x: 0,
+        y: 0,
+        z: 0,
+        duration,
+        ease
+      })
     }
   }
 
@@ -246,9 +212,10 @@ export default class CameraOnPath {
     const { width, height } = this.sizes
     this.camera = new THREE.PerspectiveCamera(45, width / height, 0.01, 10)
 
-    // Set the camera in front of the face of the man
-    this.camera.position.set(0, 3.41, 0.23)
-    this.camera.lookAt(this.lookAt.current)
+    // Set the camera at a fixed initial position
+    this.camera.position.set(0, 4.41, -1)
+    // Always have the camera look at (0,0,0)
+    this.camera.lookAt(new THREE.Vector3(0, 0, 0))
     this.scene.add(this.camera)
 
     if (showOrbitControls) {
@@ -258,8 +225,7 @@ export default class CameraOnPath {
   }
 
   setPath() {
-    // Convert the array of points into vertices
-    // (in Blender the z axis is UP so we swap the z and y)
+    // Convert the array of points (all identical) into vertices
     for (let i = 0; i < this.points.length; i++) {
       const x = this.points[i][0] - 1.5
       const y = this.points[i][1] - 1.2
@@ -268,24 +234,16 @@ export default class CameraOnPath {
       this.vertices[i] = new THREE.Vector3(x, z, -y)
     }
 
-    // Create a path from the points
+    // Create a curve path from the vertices (all points are identical, so the curve is a single point)
     this.curvePath = new THREE.CatmullRomCurve3(this.vertices)
     const radius = 0.1
     const geometry = new THREE.TubeGeometry(this.curvePath, 50, radius, 10, false)
-
     const material = new THREE.MeshBasicMaterial({
-      wireframe: showCameraPath,
+      wireframe: true,
       visible: showCameraPath,
       transparent: true,
-      opacity: showCameraPath ? 1.0 : 0.0
+      opacity: 1.0
     })
-    // const material = new THREE.MeshBasicMaterial({
-    //   wireframe: true,
-    //   visible: true,
-    //   transparent: true,
-    //   opacity: 1.0
-    // })
-
     const tube = new THREE.Mesh(geometry, material)
     this.scene.add(tube)
   }
@@ -295,27 +253,11 @@ export default class CameraOnPath {
 
     this.camera.updateProjectionMatrix()
 
-    // Always look the current position
-    this.camera.lookAt(this.lookAt.current)
+    // Always have the camera look at (0,0,0)
+    this.camera.lookAt(new THREE.Vector3(0, 0, 0))
 
-    // when store.scroll = true follow the scroll position
-    if (this.bodyHeight && !this.menuOpen) {
-      this.percentage = betweenRange(1 - window.scrollY / this.bodyHeight, 0, 1)
-      const p1 = this.curvePath.getPointAt(this.percentage)
-      const x = toFixedNumber(p1.x + window.cursorNormalized.x * 0.2, 6, 10)
-      const y = toFixedNumber(p1.y + window.cursorNormalized.y * 0.2, 6, 10)
-      const z = toFixedNumber(p1.z, 6, 10)
-
-      if (
-        this.camera.position.x !== x ||
-        this.camera.position.y !== y ||
-        this.camera.position.z !== z
-      ) {
-        gsap.to(this.camera.position, { x, y, z, duration: 1 })
-      }
-    }
-
-    // Camera Helper
+    // Since the camera path is stationary,
+    // we are not updating the camera's position based on scroll.
     if (showOrbitControls) {
       this.cameraHelper.update()
     }
