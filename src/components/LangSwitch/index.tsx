@@ -14,7 +14,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 const links = [
-  { code: '𝕏', label: '𝕏', link: 'https://x.com/BonkersAI' },
+  { code: '𝕏', label: '𝕏 --', link: 'https://x.com/BonkersAI' },
   { code: 'CA', label: 'CA', action: 'copy', textToCopy: 'TBD' }
 ]
 
