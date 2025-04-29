@@ -82,7 +82,7 @@ const sources: Sources = [
   {
     name: 'manModel',
     type: 'gltfModel',
-    path: '/models/Man/Man7.glb'
+    path: '/models/Man/bonkmodel.glb'
   },
   {
     name: 'venice',

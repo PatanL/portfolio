@@ -213,7 +213,7 @@ export default class CameraOnPath {
     this.camera = new THREE.PerspectiveCamera(45, width / height, 0.01, 10)
 
     // Set the camera at a fixed initial position
-    this.camera.position.set(0, 4.41, -1)
+    this.camera.position.set(0, -1, -2)
     // Always have the camera look at (0,0,0)
     this.camera.lookAt(new THREE.Vector3(0, 0, 0))
     this.scene.add(this.camera)
