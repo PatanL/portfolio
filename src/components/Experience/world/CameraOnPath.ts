@@ -98,10 +98,12 @@ export default class CameraOnPath {
       this.appReady = state.app.ready
 
       const index = this.vertices.length - 1
+      const finalPos = this.vertices[index].clone()
+      finalPos.y -= 2
       gsap.to(this.camera.position, {
-        x: this.vertices[index].x,
-        y: this.vertices[index].y,
-        z: this.vertices[index].z,
+        x: finalPos.x,
+        y: finalPos.y,
+        z: finalPos.z,
         duration: 3.5,
         ease: 'power3.inOut'
       })
@@ -215,7 +217,7 @@ export default class CameraOnPath {
     // Set the camera at a fixed initial position
     this.camera.position.set(0, -1, -2)
     // Always have the camera look at (0,0,0)
-    this.camera.lookAt(new THREE.Vector3(0, 0, 0))
+    this.camera.lookAt(new THREE.Vector3(0, -1, 0))
     this.scene.add(this.camera)
 
     if (showOrbitControls) {

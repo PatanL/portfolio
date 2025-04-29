@@ -1,24 +1,22 @@
+// Types
 import type { RootState } from 'store'
 
 // Style
 import style from './index.module.css'
 
-// Hooks
-import { useCallback } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import useBackgroundAudio from 'hooks/useBackgroundAudio'
-import useIntroAudio from 'hooks/useIntroAudio'
-import useVangelisAudio from 'hooks/useVangelisAudio'
-
 // Utils
 import cn from 'classnames'
 
+// Hooks
+import { useCallback } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+
 function AudioWave() {
   const dispatch = useDispatch()
-  const { app, audio } = useSelector((state: RootState) => ({ app: state.app, audio: state.audio }))
-  const { toggle, isPlaying } = useBackgroundAudio()
-  // useIntroAudio()
-  // useVangelisAudio()
+  const { app, audio } = useSelector((state: RootState) => ({
+    app: state.app,
+    audio: state.audio
+  }))
 
   const muteHandler = useCallback(() => {
     if (audio.mute) {
@@ -26,8 +24,7 @@ function AudioWave() {
     } else {
       dispatch.audio.mute()
     }
-    toggle()
-  }, [audio.mute, dispatch.audio, toggle])
+  }, [audio.mute, dispatch.audio])
 
   const overHandler = useCallback(() => {
     if (!app.ready) return
@@ -40,12 +37,15 @@ function AudioWave() {
   }, [app.ready, dispatch.pointer])
 
   const classes = cn(style.root, {
-    [style.hidden]: !app.ready,
-    [style.isPlaying]: isPlaying
+    [style.hidden]: !app.ready
   })
 
   return (
-    <button className={classes} onMouseEnter={overHandler} onMouseLeave={outHandler}>
+    <button
+      className={classes}
+      onMouseEnter={overHandler}
+      onMouseLeave={outHandler}
+    >
       <div className={style.wave} onClick={muteHandler}>
         <div className={style.bar} />
         <div className={style.bar} />

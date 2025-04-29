@@ -14,8 +14,8 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 const links = [
-  { code: '𝕏', label: '𝕏', link: 'https://x.com/neuro_waves' },
-  { code: 'CA', label: 'CA', action: 'copy', textToCopy: 'ApFpjQxmx3M6S5pApE2Ty7hGAQyXT2EYEVTLNhEmpump' }
+  { code: '𝕏', label: '𝕏', link: 'https://x.com/BonkersAI' },
+  { code: 'CA', label: 'CA', action: 'copy', textToCopy: 'TBD' }
 ]
 
 const LangSwitch = () => {
